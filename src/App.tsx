@@ -116,7 +116,8 @@ export default function App() {
   }, [selectedTypes, startYear, endYear]);
 
   return (
-    <div className={`min-h-screen font-sans antialiased selection:bg-neutral-200 transition-colors duration-300 ${
+    /* Outer Wide Paint Canvas - This forces color to bleed all the way to the screen margins */
+    <div className={`w-full min-h-screen font-sans antialiased selection:bg-neutral-200 transition-colors duration-300 ${
       isDarkMode ? "bg-neutral-950 text-neutral-100" : "bg-[#FBFBFB] text-[#1C1C1C]"
     }`}>
       
